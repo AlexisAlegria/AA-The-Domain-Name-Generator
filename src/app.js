@@ -17,11 +17,11 @@ let extension = [".com", ".net", ".us", ".io"];
 
 const theDomainNameGenerator = (arr1, arr2, arr3, arr4) => {
   let domainName = "";
-  for (i = 0; i < arr1.length; i++) {
-    for (j = 0; j < arr2.length; j++) {
-      for (x = 0; x < arr3.length; x++) {
-        for (y = 0; y < arr4.length; y++) {
-          domainName = arr1 + arr2 + arr3 + arr4;
+  for (let i = 0; i < arr1.length; i++) {
+    for (let j = 0; j < arr2.length; j++) {
+      for (let x = 0; x < arr3.length; x++) {
+        for (let y = 0; y < arr4.length; y++) {
+          domainName += arr1[i].concat(arr2[j], arr3[x], arr4[y], "  ");
         }
       }
     }
